@@ -1,0 +1,139 @@
+$theme-colors: (
+  "greeni": #1ebba3,
+  "bruni": #906040,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px,
+) !default;
+// 43291f
+
+@import "bootstrap/bootstrap";
+@import "mixins";
+
+// ! START STYLING
+// * variables
+$greeni: #1ebba3;
+
+// ! classes
+.darken {
+  background: rgba(14, 10, 10, 0.712) !important;
+}
+
+.active {
+  color: $greeni !important ;
+}
+
+.Bwrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  height: 3000px;
+  color: #fff;
+}
+nav {
+  .navbar-toggler {
+    border: 0 !important;
+    &:focus {
+      border: 0 !important;
+    }
+  }
+  // .navbar-nav li:first-child a{
+  //     color:$greeni !important;
+  // }
+  ul li {
+    padding: 0 5px;
+  }
+  a {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: rgb(236, 236, 216) !important;
+    text-shadow: 2px 2px 9px #000;
+
+    &:hover {
+      cursor: pointer;
+      color: $greeni !important;
+    }
+  }
+
+  .navbar-collapse {
+    @include lg-breackpoint {
+      background: rgba(14, 10, 10, 0.712);
+    }
+  }
+}
+
+// ? header
+
+header {
+  background-image: url(../img/computers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 800px;
+  .row {
+    height: 700px;
+  }
+  h1 {
+    text-shadow: 5px 2px 8px #000;
+
+    @include lg-breackpoint {
+      font-size: 4rem !important;
+    }
+    @include md-breackpoint {
+      font-size: 3.3rem !important;
+    }
+    @include sm-breackpoint {
+      font-size: 2.3rem !important;
+    }
+  }
+  h2 {
+    @include md-breackpoint {
+      font-size: 1.7rem !important;
+    }
+
+    @include sm-breackpoint {
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+//? SECTION FEATURES
+#features p {
+  @include greenborder;
+}
+// ? section BUILT
+#built {
+  background-image: url(../img/fixed/apple.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  .container > p {
+    @include greenborder;
+  }
+
+  @include md-breackpoint {
+    height: 1100px !important;
+  }
+  @include sm-breackpoint {
+    height: 1100px !important;
+  }
+  @include xsm-breackpoint {
+    height: 1300px !important;
+  }
+}
