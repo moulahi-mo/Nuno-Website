@@ -30,3 +30,14 @@
   height: 5px;
   background: $greeni;
 }
+
+@mixin scale {
+  transition: transform 1s ease;
+  perspective-origin: center;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  &:hover {
+    transform: scale3d(1.1, 1.1, 0.1);
+    cursor: pointer;
+  }
+}

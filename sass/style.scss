@@ -35,9 +35,16 @@ $greeni: #1ebba3;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.Wwrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.739);
+}
 
 body {
-  height: 3000px;
   color: #fff;
 }
 nav {
@@ -135,5 +142,113 @@ header {
   }
   @include xsm-breackpoint {
     height: 1300px !important;
+  }
+}
+
+//? SECTION PORTFOLIO
+#portfolio {
+  .container-fluid > p {
+    @include greenborder;
+  }
+  img {
+    &:hover {
+      cursor: zoom-in;
+
+      transform: translatez(100px, 100px, 200px);
+      transition: all 1s ease-in;
+    }
+  }
+
+  .col {
+    padding: 0;
+  }
+}
+
+//? SECTION PRICING
+#pricing {
+  .container > p {
+    @include greenborder;
+  }
+  .card {
+    @include scale;
+    border-top: 3px solid $greeni !important;
+    h2 {
+      border-bottom: 2px solid grey;
+    }
+  }
+}
+//? SECTION TEAM
+
+#team {
+  background-image: url(../img/fixed/office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+  .card {
+    @include scale;
+  }
+  .card {
+    &:hover {
+      transform: scale3d(0.9, 0.9, 0.1) !important;
+    }
+  }
+  .container > p {
+    @include greenborder;
+  }
+  .card-footer a i {
+    &:hover {
+      opacity: 0.8;
+      color: rgb(75, 70, 70) !important;
+    }
+  }
+
+  @include md-breackpoint {
+    height: 2300px !important;
+  }
+  @include sm-breackpoint {
+    height: 2300px !important;
+  }
+  @include xsm-breackpoint {
+    height: 2000px !important;
+  }
+}
+
+//? SECTION SKILLS
+#skills {
+  .container > p {
+    @include greenborder;
+  }
+}
+
+//? SECTION CLIENTS
+#clients {
+  .container > p {
+    @include greenborder;
+  }
+}
+
+//? SECTION CONTACT FOOTER
+
+#contact {
+  background-image: url(../img/footer/footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+}
+
+//? SECTION CONTACT
+#contact {
+  .container > p {
+    @include greenborder;
   }
 }

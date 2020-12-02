@@ -11147,8 +11147,16 @@ a.text-bruni:hover, a.text-bruni:focus {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.Wwrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.739);
+}
+
 body {
-  height: 3000px;
   color: #fff;
 }
 
@@ -11268,5 +11276,147 @@ header h1 {
   #built {
     height: 1300px !important;
   }
+}
+
+#portfolio .container-fluid > p, #portfolio .container-sm > p, #portfolio .container-md > p, #portfolio .container-lg > p, #portfolio .container-xl > p {
+  width: 50px;
+  height: 5px;
+  background: #1ebba3;
+}
+
+#portfolio img:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  -webkit-transform: translatez(100px, 100px, 200px);
+          transform: translatez(100px, 100px, 200px);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+#portfolio .col {
+  padding: 0;
+}
+
+#pricing .container > p {
+  width: 50px;
+  height: 5px;
+  background: #1ebba3;
+}
+
+#pricing .card {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-top: 3px solid #1ebba3 !important;
+}
+
+#pricing .card:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 0.1);
+          transform: scale3d(1.1, 1.1, 0.1);
+  cursor: pointer;
+}
+
+#pricing .card h2 {
+  border-bottom: 2px solid grey;
+}
+
+#team {
+  background-image: url(../img/fixed/office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+}
+
+#team .card {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-perspective-origin: center;
+          perspective-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#team .card:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 0.1);
+          transform: scale3d(1.1, 1.1, 0.1);
+  cursor: pointer;
+}
+
+#team .card:hover {
+  -webkit-transform: scale3d(0.9, 0.9, 0.1) !important;
+          transform: scale3d(0.9, 0.9, 0.1) !important;
+}
+
+#team .container > p {
+  width: 50px;
+  height: 5px;
+  background: #1ebba3;
+}
+
+#team .card-footer a i:hover {
+  opacity: 0.8;
+  color: #4b4646 !important;
+}
+
+@media screen and (max-width: 768px) {
+  #team {
+    height: 2300px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #team {
+    height: 2300px !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #team {
+    height: 2000px !important;
+  }
+}
+
+#skills .container > p {
+  width: 50px;
+  height: 5px;
+  background: #1ebba3;
+}
+
+#clients .container > p {
+  width: 50px;
+  height: 5px;
+  background: #1ebba3;
+}
+
+#contact {
+  background-image: url(../img/footer/footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+}
+
+#contact .container > p {
+  width: 50px;
+  height: 5px;
+  background: #1ebba3;
 }
 /*# sourceMappingURL=style.css.map */
