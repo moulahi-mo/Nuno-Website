@@ -32,10 +32,10 @@
 }
 
 @mixin scale {
-  transition: transform 1s ease;
+  transition: transform 1s ease !important;
   perspective-origin: center;
   transform-origin: center;
-  transform-style: preserve-3d;
+  // transform-style: preserve-3d;
   &:hover {
     transform: scale3d(1.1, 1.1, 0.1);
     cursor: pointer;

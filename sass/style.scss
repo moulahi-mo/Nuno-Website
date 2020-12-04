@@ -43,12 +43,13 @@ $greeni: #1ebba3;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.739);
 }
-
+// Todo body
 body {
   color: #fff;
-  scroll-behavior: smooth;
 }
-
+main {
+  scroll-behavior: smooth !important;
+}
 // todo navbar
 nav {
   .navbar-toggler {
@@ -335,5 +336,11 @@ header {
 
   pre {
     overflow: hidden;
+  }
+  #myName,
+  #myName > * {
+    @include xsm-breackpoint {
+      font-size: 0.8em;
+    }
   }
 }

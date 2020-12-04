@@ -11158,7 +11158,10 @@ a.text-bruni:hover, a.text-bruni:focus {
 
 body {
   color: #fff;
-  scroll-behavior: smooth;
+}
+
+main {
+  scroll-behavior: smooth !important;
 }
 
 nav .navbar-toggler {
@@ -11311,16 +11314,14 @@ header h1 {
 }
 
 #pricing .card {
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition: -webkit-transform 1s ease !important;
+  transition: -webkit-transform 1s ease !important;
+  transition: transform 1s ease !important;
+  transition: transform 1s ease, -webkit-transform 1s ease !important;
   -webkit-perspective-origin: center;
           perspective-origin: center;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   border-top: 3px solid #1ebba3 !important;
 }
 
@@ -11364,16 +11365,14 @@ header h1 {
 }
 
 #team .card {
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-transition: -webkit-transform 1s ease !important;
+  transition: -webkit-transform 1s ease !important;
+  transition: transform 1s ease !important;
+  transition: transform 1s ease, -webkit-transform 1s ease !important;
   -webkit-perspective-origin: center;
           perspective-origin: center;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 #team .card:hover {
@@ -11506,5 +11505,12 @@ header h1 {
 
 #contact pre {
   overflow: hidden;
+}
+
+@media screen and (max-width: 340px) {
+  #contact #myName,
+  #contact #myName > * {
+    font-size: 0.8em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
