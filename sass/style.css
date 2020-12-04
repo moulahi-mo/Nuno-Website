@@ -11158,6 +11158,7 @@ a.text-bruni:hover, a.text-bruni:focus {
 
 body {
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 nav .navbar-toggler {
@@ -11234,6 +11235,12 @@ header h1 {
 @media screen and (max-width: 576px) {
   header h2 {
     font-size: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #welcome h2 {
+    font-size: 2.5rem !important;
   }
 }
 
@@ -11338,6 +11345,24 @@ header h1 {
   min-height: 1000px;
 }
 
+@media screen and (max-width: 992px) {
+  #team {
+    height: 1400px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #team {
+    height: 1300px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #team {
+    height: 800px !important;
+  }
+}
+
 #team .card {
   -webkit-transition: -webkit-transform 1s ease;
   transition: -webkit-transform 1s ease;
@@ -11375,7 +11400,7 @@ header h1 {
 
 @media screen and (max-width: 768px) {
   #team {
-    height: 2300px !important;
+    height: 1300px !important;
   }
 }
 
@@ -11397,10 +11422,39 @@ header h1 {
   background: #1ebba3;
 }
 
+#clients {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 #clients .container > p {
   width: 50px;
   height: 5px;
   background: #1ebba3;
+}
+
+#clients .card {
+  height: 276px;
+  width: 664px;
+}
+
+#clients .card-body img {
+  width: 180px !important;
+  height: 180px !important;
+}
+
+#clients .carousel {
+  height: 400px;
+  width: 100%;
+}
+
+#clients .carousel .carousel-control-prev,
+#clients .carousel .carousel-control-next {
+  color: #000;
+}
+
+#clients .carousel .carousel-control-prev .carousel-control-next-icon,
+#clients .carousel .carousel-control-next .carousel-control-next-icon {
+  color: grey !important;
 }
 
 #contact {
@@ -11411,12 +11465,46 @@ header h1 {
   background-attachment: fixed;
   position: relative;
   width: 100%;
+  height: 100%;
   min-height: 700px;
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    height: 1100px !important;
+  }
 }
 
 #contact .container > p {
   width: 50px;
   height: 5px;
   background: #1ebba3;
+}
+
+#contact #upicon {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+#contact #upicon:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transform: translatey(-10px);
+          transform: translatey(-10px);
+}
+
+#contact form textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+#contact form textarea:focus {
+  border-color: skyblue !important;
+}
+
+#contact pre {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

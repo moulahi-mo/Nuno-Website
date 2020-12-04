@@ -46,7 +46,10 @@ $greeni: #1ebba3;
 
 body {
   color: #fff;
+  scroll-behavior: smooth;
 }
+
+// todo navbar
 nav {
   .navbar-toggler {
     border: 0 !important;
@@ -111,6 +114,16 @@ header {
 
     @include sm-breackpoint {
       font-size: 1.5rem !important;
+    }
+  }
+}
+
+// todo: welcome Section
+
+#welcome {
+  h2 {
+    @include xsm-breackpoint {
+      font-size: 2.5rem !important;
     }
   }
 }
@@ -189,6 +202,21 @@ header {
   position: relative;
   width: 100%;
   min-height: 1000px;
+
+  @include lg-breackpoint {
+    height: 1400px !important;
+  }
+
+  @include md-breackpoint {
+    height: 1300px !important;
+  }
+  @include sm-breackpoint {
+    height: 800px !important;
+  }
+  // @include xsm-breackpoint {
+  //   height: 5000px !important;
+  // }
+
   .card {
     @include scale;
   }
@@ -208,7 +236,7 @@ header {
   }
 
   @include md-breackpoint {
-    height: 2300px !important;
+    height: 1300px !important;
   }
   @include sm-breackpoint {
     height: 2300px !important;
@@ -227,8 +255,28 @@ header {
 
 //? SECTION CLIENTS
 #clients {
+  background-color: rgba(0, 0, 0, 0.7);
   .container > p {
     @include greenborder;
+  }
+  .card {
+    height: 276px;
+    width: 664px;
+  }
+  .card-body img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .carousel {
+    height: 400px;
+    width: 100%;
+    .carousel-control-prev,
+    .carousel-control-next {
+      color: #000;
+      .carousel-control-next-icon {
+        color: grey !important;
+      }
+    }
   }
 }
 
@@ -243,12 +291,49 @@ header {
 
   position: relative;
   width: 100%;
+  height: 100%;
   min-height: 700px;
+
+  // @include lg-breackpoint {
+  //   height: 1000px !important;
+  // }
+
+  @include md-breackpoint {
+    height: 1100px !important;
+  }
+
+  // @include sm-breackpoint {
+  //   height:3000px !important;
+  // }
+  // @include xsm-breackpoint {
+  //   height: 1800px !important;
+  // }
 }
 
-//? SECTION CONTACT
+// ? SECTION CONTACT
 #contact {
   .container > p {
     @include greenborder;
+  }
+  #upicon {
+    transition: transform 1s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      transform: translatey(-10px);
+    }
+  }
+  form {
+    textarea {
+      resize: none;
+      min-height: 100px;
+      &:focus {
+        border-color: skyblue !important;
+      }
+    }
+  }
+
+  pre {
+    overflow: hidden;
   }
 }
