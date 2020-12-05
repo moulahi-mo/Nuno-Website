@@ -11156,12 +11156,12 @@ a.text-bruni:hover, a.text-bruni:focus {
   background-color: rgba(255, 255, 255, 0.739);
 }
 
-body {
-  color: #fff;
+html {
+  scroll-behavior: smooth !important;
 }
 
-main {
-  scroll-behavior: smooth !important;
+body {
+  color: #fff;
 }
 
 nav .navbar-toggler {
