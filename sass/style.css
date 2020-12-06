@@ -11314,6 +11314,7 @@ header h1 {
 }
 
 #pricing .card {
+  overflow: hidden;
   -webkit-transition: -webkit-transform 1s ease !important;
   transition: -webkit-transform 1s ease !important;
   transition: transform 1s ease !important;
@@ -11333,6 +11334,16 @@ header h1 {
 
 #pricing .card h2 {
   border-bottom: 2px solid grey;
+}
+
+#pricing .rebon {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 127px;
+  height: 31px;
+  right: -30px;
+  top: 19px;
 }
 
 #team {
@@ -11434,6 +11445,20 @@ header h1 {
 #clients .card {
   height: 276px;
   width: 664px;
+}
+
+@media screen and (max-width: 768px) {
+  #clients .card {
+    height: 304px;
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #clients .card {
+    height: 366px !important;
+    width: 374px !important;
+  }
 }
 
 #clients .card-body img {

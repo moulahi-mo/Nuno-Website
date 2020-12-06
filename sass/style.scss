@@ -185,13 +185,23 @@ header {
     @include greenborder;
   }
   .card {
+    overflow: hidden;
     @include scale;
     border-top: 3px solid $greeni !important;
     h2 {
       border-bottom: 2px solid grey;
     }
   }
+  .rebon {
+    position: absolute;
+    transform: rotate(45deg);
+    width: 127px;
+    height: 31px;
+    right: -30px;
+    top: 19px;
+  }
 }
+
 //? SECTION TEAM
 
 #team {
@@ -264,6 +274,16 @@ header {
   .card {
     height: 276px;
     width: 664px;
+
+    @include md-breackpoint {
+      height: 304px;
+      width: 520px;
+    }
+
+    @include sm-breackpoint {
+      height: 366px !important;
+      width: 374px !important;
+    }
   }
   .card-body img {
     width: 180px !important;
