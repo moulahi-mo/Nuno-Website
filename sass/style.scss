@@ -55,8 +55,10 @@ body {
 nav {
   .navbar-toggler {
     border: 0 !important;
-    &:focus {
+    outline:0 !important;
+    &:focus,&:active {
       border: 0 !important;
+      outline:0 !important;
     }
   }
   // .navbar-nav li:first-child a{
@@ -263,6 +265,9 @@ header {
   .container > p {
     @include greenborder;
   }
+  .count {
+    transition:all 4s ease-in-out ;
+  }
 }
 
 //? SECTION CLIENTS
@@ -316,20 +321,11 @@ header {
   height: 100%;
   min-height: 700px;
 
-  // @include lg-breackpoint {
-  //   height: 1000px !important;
-  // }
 
   @include md-breackpoint {
     height: 1100px !important;
   }
 
-  // @include sm-breackpoint {
-  //   height:3000px !important;
-  // }
-  // @include xsm-breackpoint {
-  //   height: 1800px !important;
-  // }
 }
 
 // ? SECTION CONTACT

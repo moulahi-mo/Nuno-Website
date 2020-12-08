@@ -1,3 +1,7 @@
+$(function(){
+
+
+
 // ! scroll background show
 
 $(window).scroll(function () {
@@ -19,7 +23,7 @@ $(document).on("click", '[data-toggle="lightbox"]', function (event) {
 });
 
 // ! wypoint Anmiation
-if (innerWidth > 568) {
+if (innerWidth > 768) {
   // todo welcome section
   var waypoint = new Waypoint({
     element: document.querySelector("#welcome"),
@@ -186,14 +190,22 @@ if (innerWidth > 568) {
     }, 5000);
   }
 }
-// else if(innerWidth<568)
-// {
-//    $('#features .card').addClass('animate__animated animate__fadeInUp animate__slower');
-//    $('.built .card').addClass('animate__animated animate__fadeInUp animate__slower');
+else if(innerWidth<768)
+{ 
+  document.querySelectorAll('.col').forEach(item=>{
+    item.classList.add('animate__animated','animate__fadeInUp','animate__slower','wow');
+  })
 
-// }
+  //  $('.col').has('animate__animated').addClass('animate__animated animate__fadeInUp animate__slower');
+ 
+
+}
 // ! carousel
 $(".carousel").carousel();
 $(".carousel").carousel({
   interval: 2000,
+});
+
+
+
 });
